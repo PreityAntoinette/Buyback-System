@@ -1,0 +1,172 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* General */
+body {
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.header{
+    background-color: blue;
+    color: white;
+    /* KEY PART */
+    margin: -25px -25px 20px -25px; 
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: left;
+}
+
+.header h1{
+    padding: 0;
+    margin: 0;
+}
+.header h3{
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main container */
+.main-container {
+    width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 20px 0 10px;
+}
+
+/* Buttons */
+/* From Uiverse.io by portseif */ 
+button {
+  background-color: #ffffff;
+  border: 1px solid rgb(209, 213, 219);
+  border-radius: 0.5rem;
+  color: #111827;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  margin: 5px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f9fafb;
+}
+
+button:focus {
+  outline: 2px solid rgba(0, 0, 0, 0.1);
+  outline-offset: 2px;
+}
+
+button:focus-visible {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+/* Sections */
+#models, #storages, #conditions {
+    margin-top: 20px;
+}
+
+/* Condition box */
+#condition-list {
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Each condition item */
+.condition-item {
+    background: #f1f3f6;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Condition text */
+.condition-text {
+    font-weight: bold;
+}
+
+/* Description */
+.condition-desc {
+    font-size: 13px;
+    color: #555;
+}
+
+/* Price */
+.condition-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #28a745;
+}
+/* Device buttons with icons */
+
+/* Container holding the device buttons */
+#device-section {
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    flex-wrap: wrap;          /* wrap buttons on smaller screens */
+    gap: 20px;                /* space between buttons */
+    margin-top: 50px;
+}
+
+/* Device buttons */
+.device-btn {
+    display: flex;
+    flex-direction: column;   /* icon on top, text below */
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 140px;             /* fixed width */
+    height: 140px;            /* fixed height */
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Hover effect */
+.device-btn:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-4px);   /* subtle lift */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Icon inside button */
+.device-icon {
+    width: 50px;               /* icon size */
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;       /* space between icon and text */
+}
