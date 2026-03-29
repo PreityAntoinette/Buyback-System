@@ -17,7 +17,7 @@ include 'db.php';
 <div class="main-container">
 
     <div class="header">
-        <h1>Start your Evaluation</h1>
+        <h1>Start your Evaluation hello preity</h1>
         <h3>Get an instant quote for your device</h3>
     </div>
 

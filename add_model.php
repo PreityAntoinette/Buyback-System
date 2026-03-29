@@ -18,7 +18,7 @@ foreach($storages as $i => $storage){
     // Flawless
     $stmt = $conn->prepare("INSERT INTO mobile_iphone (brand, model, storage, `condition`, price) VALUES (?, ?, ?, 'Flawless', ?)");
     $stmt->bind_param("sssd", $brand, $model, $storage, $prices_Flawless[$i]);
-    $stmt->execute(); preity
+    $stmt->execute();
 
     // Excellent
     $stmt = $conn->prepare("INSERT INTO mobile_iphone (brand, model, storage, `condition`, price) VALUES (?, ?, ?, 'Excellent', ?)");
