@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // your database connection
+include '../db.php'; // your database connection
 
 // Fetch all data pivoted by condition including Good and As New
 $sql = "SELECT model, storage,
@@ -76,7 +76,7 @@ while($row = $result->fetch_assoc()){
         <th>Good</th>
     </tr>
 </body>
-<script src="js/pop_up_modal.js"></script>
+<script src="../js/pop_up_modal.js"></script>
 </html>
 
 

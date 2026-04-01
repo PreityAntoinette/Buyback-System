@@ -1,0 +1,22 @@
+.selection-bar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0 20px 0; /* cleaner spacing */
+    justify-content: center; /* optional: center it */
+}
+
+.selection-item {
+    background: #007bff;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+.selection-item span {
+    cursor: pointer;
+    font-weight: bold;
+}

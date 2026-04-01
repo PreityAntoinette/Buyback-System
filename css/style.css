@@ -35,6 +35,14 @@ body {
     margin: 0;
 }
 
+nav {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    display: blocl;
+}
+
 /* Main container */
 .main-container {
     width: 500px;
@@ -169,4 +177,25 @@ button:focus-visible {
     height: 50px;
     object-fit: contain;
     margin-bottom: 10px;       /* space between icon and text */
+}
+
+/*For disabled buttons*/
+
+/* Disabled device buttons */
+.device-btn.disabled-btn,
+.device-btn:disabled {
+    background-color: #e0e0e0 !important;
+    color: #888 !important;
+    cursor: not-allowed !important;
+    opacity: 0.6 !important;
+    border: 1px solid #ccc !important;
+    pointer-events: none; /* prevents any hover/click */
+}
+
+/* Remove hover effect for disabled */
+.device-btn.disabled-btn:hover,
+.device-btn:disabled:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background-color: #e0e0e0 !important;
 }

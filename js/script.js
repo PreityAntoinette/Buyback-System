@@ -22,13 +22,14 @@ window.onload = function() {
     loadDevices();
 };
 
+
 // Load device buttons
 function loadDevices() {
     const deviceDiv = document.getElementById('device-section');
-    deviceDiv.innerHTML = ''; // clear in case anything exists
+    deviceDiv.innerHTML = '';
 
     const deviceIcons = {
-        "Mobile Phone": "images/mobile.jpg",
+        "Mobile Phone": "images/mobile.png",
         "Laptop": "images/laptop.png",
         "Tablet": "images/tablet.png",
         "Smart Watch": "images/watch.png"
@@ -38,7 +39,6 @@ function loadDevices() {
         let btn = document.createElement('button');
         btn.classList.add('device-btn');
 
-        // Add image
         let img = document.createElement('img');
         img.src = deviceIcons[device];
         img.alt = device;
@@ -47,7 +47,19 @@ function loadDevices() {
         btn.appendChild(img);
         btn.appendChild(document.createTextNode(device));
 
-        btn.onclick = () => selectDevice(device);
+        // ✅ Disable everything except Mobile
+        if (device !== "Mobile Phone") {
+            btn.classList.add('disabled-btn');
+            btn.disabled = true; // prevents clicking
+            btn.style.pointerEvents = "none";
+            btn.style.opacity = "0.5";
+            let overlay = document.createElement('div');
+            overlay.classList.add('coming-soon');
+            overlay.innerText = "Coming Soon";
+        } else {
+            btn.onclick = () => selectDevice(device);
+        }
+
         deviceDiv.appendChild(btn);
     });
 }
@@ -141,3 +153,4 @@ function selectMobileStorage(storage){
 
     document.getElementById('conditions').style.display = 'block';
 }
+

@@ -11,18 +11,25 @@ include 'db.php';
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/selection_bar.css">
 </head>
 <body>
+    <nav>
+        <ul>Sell Your Device</ul>
+    </nav>
 
 <div class="main-container">
 
     <div class="header">
+        <!-- Selected items (breadcrumb style) --> 
         <h1>Start your Evaluation</h1>
         <h3>Get an instant quote for your device</h3>
     </div>
 
+     <div id="selection-bar" class="selection-bar"></div>
+
     <!-- Device selection (new) -->
-    <div id="device-section">
+    <div id="device-section">   
         <h1>Select Device</h1>
         <!-- JS will dynamically add buttons for Mobile, Laptop, Tablet, Smart Watch -->
     </div>
@@ -54,5 +61,6 @@ include 'db.php';
 </div>
 
 <script src="js/script.js?v=1.0"></script>
+<script src="js/selection_bar.js?v=1.0"></script>
 </body>
 </html>

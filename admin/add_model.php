@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include '../db.php';
 
 $brand = $_POST['brand'];
 $model = $_POST['model'];

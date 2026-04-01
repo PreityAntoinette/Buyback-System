@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include '../db.php';
 
 if(isset($_POST['model'], $_POST['storage'], $_POST['condition'], $_POST['price'])){
     $model = $_POST['model'];
