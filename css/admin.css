@@ -1,3 +1,157 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: #f5f7fb;
+    padding: 50px;
+    color: #333;
+    margin: 0px;
+}
+
+/* Headings */
+h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin: 5px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: block;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Add Model Button */
+#addModelBtn {
+    display: block;
+    margin: 0 auto 20px auto;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* Modal */
+#addModelModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+#addModelModal > div {
+    background: #fff;
+    padding: 25px;
+    width: 500px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Form */
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 6px;
+    margin: 5px 5px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Storage Row */
+.storage-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.storage-row input {
+    flex: 1;
+    min-width: 70px;
+}
+
+/* Table */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* Table Header */
+th {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+/* Table Cells */
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+     white-space: nowrap;
+}
+
+/* Alternate Rows */
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Update Form Inside Table */
+td form {
+    display: flex;
+    align-items: center;
+}
+
+td input[type="number"] {
+    width: 80px;
+    margin-bottom: 5px;
+}
+
+/* Cancel Button */
+#closeModalBtn {
+    background: #f44336;
+}
+
+#closeModalBtn:hover {
+    background: #d73833;
+}
+
+/* Add Storage Button */
+#addStorageBtn {
+    background: #2196F3;
+}
+
+#addStorageBtn:hover {
+    background: #1976d2;
+}
+
 #addModelModal {
     display: none; /* hidden by default */
     position: fixed;

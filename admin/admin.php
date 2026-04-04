@@ -31,7 +31,7 @@ while($row = $result->fetch_assoc()){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
     <button id="addModelBtn">Add New Model</button>
@@ -74,33 +74,46 @@ while($row = $result->fetch_assoc()){
         <th>Flawless</th>
         <th>Excellent</th>
         <th>Good</th>
+        <th>Edit</th>
     </tr>
-</body>
-<script src="../js/pop_up_modal.js"></script>
-</html>
-
 
 <?php foreach($data as $model => $storages): ?>
     <?php $rowspan = count($storages); ?>
+    
     <?php foreach($storages as $i => $s): ?>
     <tr>
-        <?php if($i == 0): ?>
-            <td rowspan="<?= $rowspan ?>"><?= $model ?></td>
-        <?php endif; ?>
-        <td><?= $s['storage'] ?></td>
+        <form method="POST" action="update.php">
+            
+            <?php if($i == 0): ?>
+                <td rowspan="<?= $rowspan ?>"><?= $model ?></td>
+            <?php endif; ?>
 
-        <?php foreach(['As New', 'Flawless', 'Excellent', 'Good'] as $cond): ?>
-        <td>
-            <form method="POST" action="update.php">
+            <td>
+                <?= $s['storage'] ?>
                 <input type="hidden" name="model" value="<?= $model ?>">
                 <input type="hidden" name="storage" value="<?= $s['storage'] ?>">
-                <input type="hidden" name="condition" value="<?= $cond ?>">
-                <input type="number" name="price" value="<?= $s[$cond] ?>" required>
+            </td>
+
+            <td>
+                <input type="number" name="prices[As New]" value="<?= $s['As New'] ?>" required>
+            </td>
+            <td>
+                <input type="number" name="prices[Flawless]" value="<?= $s['Flawless'] ?>" required>
+            </td>
+            <td>
+                <input type="number" name="prices[Excellent]" value="<?= $s['Excellent'] ?>" required>
+            </td>
+            <td>
+                <input type="number" name="prices[Good]" value="<?= $s['Good'] ?>" required>
+            </td>
+
+            <td>
                 <button type="submit">Update</button>
-            </form>
-        </td>
-        <?php endforeach; ?>
+            </td>
+
+        </form>
     </tr>
     <?php endforeach; ?>
 <?php endforeach; ?>
+
 </table>
