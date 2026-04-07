@@ -14,8 +14,13 @@ include 'db.php';
 <link rel="stylesheet" href="css/selection_bar.css">
 </head>
 <body>
-    <nav>
-        <ul>Sell Your Device</ul>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/usbs.png" alt="USBS Logo">
+        </div>
+        <ul class="nav-links">
+                <li><a href="https://usbs-uae.com/" target="_blank">USBS Website</a></li>
+        </ul>
     </nav>
 
 <div class="main-container">
