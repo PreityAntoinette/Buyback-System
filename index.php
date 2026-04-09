@@ -18,53 +18,96 @@ include 'db.php';
         <div class="logo">
             <img src="images/usbs.png" alt="USBS Logo">
         </div>
+
+        <div class="center-text">
+            Sell your Device
+        </div>
         <ul class="nav-links">
                 <li><a href="https://usbs-uae.com/" target="_blank">USBS Website</a></li>
         </ul>
     </nav>
 
-<div class="main-container">
+    <div class="content-wrapper">
+        <div class="main-container">
 
-    <div class="header">
-        <!-- Selected items (breadcrumb style) --> 
-        <h1>Start your Evaluation</h1>
-        <h3>Get an instant quote for your device</h3>
-    </div>
+            <div class="header">
+                <!-- Selected items (breadcrumb style) --> 
+                <h1>Start your Evaluation</h1>
+                <h3>Get an instant quote for your device</h3>
+            </div>
 
-     <div id="selection-bar" class="selection-bar"></div>
+            <div id="selection-bar" class="selection-bar"></div>
 
-    <!-- Device selection (new) -->
-    <div id="device-section">   
-        <h1>Select Device</h1>
-        <!-- JS will dynamically add buttons for Mobile, Laptop, Tablet, Smart Watch -->
-    </div>
+            <!-- Device selection (new) -->
+            <div id="device-section">   
+                <h1>Select Device</h1>
+                <!-- JS will dynamically add buttons for Mobile, Laptop, Tablet, Smart Watch -->
+            </div>
 
-    <!-- Brand selection (only for Mobile) -->
-    <div id="brand-section" style="display:none;">
-        <h1>Select Brand</h1>
-        <div id="brands"></div>
-    </div>
+            <!-- Brand selection (only for Mobile) -->
+            <div id="brand-section" style="display:none;">
+                <h1>Select Brand</h1>
+                <div id="brands"></div>
+            </div>
 
-    <!-- Model selection -->
-    <div id="models" style="display:none;">
-        <h2>Select Model</h2>
-        <div id="model-buttons" style="color:white;"></div>
-    </div>
+            <!-- Model selection -->
+            <div id="models" style="display:none;">
+                <h2>Select Model</h2>
+                <div id="model-buttons" style="color:white;"></div>
+            </div>
 
-    <!-- Storage selection -->
-    <div id="storages" style="display:none;">
-        <h2>Select Storage</h2>
-        <div id="storage-buttons"></div>
-    </div>
+            <!-- Storage selection -->
+            <div id="storages" style="display:none;">
+                <h2>Select Storage</h2>
+                <div id="storage-buttons"></div>
+            </div>
 
-    <!-- Conditions with prices -->
-    <div id="conditions" style="display:none;">
-        <h2>Buyback Prices</h2>
-        <div id="condition-list"></div>
+            <!-- Conditions with prices -->
+            <div id="conditions" style="display:none;">
+                <h2>Buyback Prices</h2>
+                <div id="condition-list"></div>
+            </div>
+
+        </div>
+
+        <div class="instructions">
+            <h2>How It Works</h2>
+
+            <div class="step">
+                <div class="number">1</div>
+                <p>Select your device specifications.</p>
+            </div>
+
+            <div class="step">
+                <div class="number">2</div>
+                <p>Get an instant estimated quote based on condition.</p>
+            </div>
+
+            <div class="step">
+                <div class="number">3</div>
+                <p>Visit one of our branches for device inspection.</p>
+            </div>
+
+            <div class="step">
+                <div class="number">4</div>
+                <p>Receive the final offer after inspection and get paid.</p>
     </div>
 
 </div>
 
+    </div>
+
+    <div class="location">
+        <img src="images/locations.png" alt="">
+        <div class="location-text">
+            <h2>Visit Our Branches</h2>
+            <p>Find your nearest USBS branch for device inspection and instant payment.</p>
+            <button>Dubai Outlet Mall</button>
+            <button>Al Ghurair Center</button>
+
+
+
+    </div>
 <script src="js/script.js?v=1.0"></script>
 <script src="js/selection_bar.js?v=1.0"></script>
 </body>
