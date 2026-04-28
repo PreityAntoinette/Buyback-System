@@ -84,23 +84,23 @@ nav {
 
 /* From Uiverse.io by SteveBloX */ 
 .nav-links a {
-  width: 200px;
-  height: 70px;
-  padding: 10px;
-  border: 3px solid #315cfd;
-  border-radius: 45px;
-  transition: all 0.3s;
+  border: 2px solid #24b4fb;
+  background-color: #24b4fb;
+  border-radius: 0.9em;
   cursor: pointer;
-  background: white;
-  font-size: 1em;
-  font-weight: 550;
-  text-decoration: none;
+  padding: 0.8em 1.2em 0.8em 1em;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .nav-links a:hover {
-  background: #315cfd;
-  color: white;
-  font-size: 1.3em;
+  background-color: #0071e2;
 }
 
 .content-wrapper {
@@ -301,7 +301,72 @@ button:focus-visible {
 
 /*Locations*/
 
-.location img{
-    width: 1300px;
+.location {
+    position: relative; /* makes this the reference */
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.location img {
+    width: 100%;
+    opacity: 80%;
     height: auto;
+    display: block;
+}
+
+.location-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* perfect center */
+    text-align: center;
+    color: white;
+}
+/*footer*/
+
+footer{
+    color: #fff;
+    background-color: var(--blue);
+}
+
+.footer-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-container ul{
+    display: flex;
+    margin-bottom: 32px;
+    gap: 15px;
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-container li{
+    padding: 0 10px;
+    margin-bottom: 0px;
+}
+
+.footer-container a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-container i{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.footer-container p{
+    text-align: center;
 }

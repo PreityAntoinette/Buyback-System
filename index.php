@@ -10,8 +10,10 @@ include 'db.php';
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/selection_bar.css">
+<link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <nav class="navbar">
@@ -104,10 +106,30 @@ include 'db.php';
             <p>Find your nearest USBS branch for device inspection and instant payment.</p>
             <button>Dubai Outlet Mall</button>
             <button>Al Ghurair Center</button>
-
-
-
+        </div>
     </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <ul class="flex-row">
+                <li><a href="https://usbs-uae.com/pages/about-us">About Us</a></li>
+                <li><a href="https://usbs-uae.com/pages/contact">Contact Us</a></li>
+            </ul>
+            <ul class="flex-row">
+                <li>
+                    <i class="fab fa-tiktok"></i>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                    <i class="fab fa-facebook"></i>
+                </li>
+            </ul>
+            <p>&copy;2026 USBS</p>
+        </div>
+    </footer>
 <script src="js/script.js?v=1.0"></script>
 <script src="js/selection_bar.js?v=1.0"></script>
 </body>
